@@ -19,7 +19,7 @@ public class GenericPrintArray <T>{
     
     public void printArray(){
         for(T data : this.myIntegerArray){
-            System.out.println("The current value in your array is: " + data + "and the data type is: " + data.getClass().getName());
+            System.out.println("The current value in your array is: " + data + " and the data type is: " + data.getClass().getName());
         }
     }
     

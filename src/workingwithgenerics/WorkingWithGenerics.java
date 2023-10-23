@@ -8,6 +8,8 @@ package workingwithgenerics;
  *
  * @author emmanuel
  */
+import java.util.ArrayList ;
+
 public class WorkingWithGenerics {
 
     /**
@@ -29,6 +31,21 @@ public class WorkingWithGenerics {
         
         GenericPrintArray genericIntegerArray = new GenericPrintArray(myArray ) ;
         genericIntegerArray.printArray();
+        
+        ArrayAndArrayListOps myArraysObj = new ArrayAndArrayListOps() ;
+        
+        Double[] localArr = {1.2, 2.3, 3.4, 4.5, 5.6} ;
+        ArrayList<Double> mutableArr = new ArrayList<>() ;
+        mutableArr.add(2.1) ;
+        mutableArr.add(3.1) ;
+        mutableArr.add(4.1) ;
+        
+        myArraysObj.fillUpLocalArray(localArr);
+        myArraysObj.fillUpArrayList(mutableArr);
+        
+        myArraysObj.printLocalArray();
+        myArraysObj.printArrayList();
+        
     }
     
 }
