@@ -15,6 +15,14 @@ public class WorkingWithGenerics {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Integer[] myArray = {2, 4, 6, 8, 10} ;
+        String[] myStringArray = {"Emmanuel", "Okoro", "Dubem", "Kamma", "Adaobi"} ;
+        
+        PrintIntegerArray printArray = new PrintIntegerArray(myArray) ;
+        printArray.printArray();
+        
+        PrintStringsArray stringArray = new PrintStringsArray(myStringArray) ;
+        stringArray.printArray();
     }
     
 }
