@@ -23,6 +23,12 @@ public class WorkingWithGenerics {
         
         PrintStringsArray stringArray = new PrintStringsArray(myStringArray) ;
         stringArray.printArray();
+        
+        GenericPrintArray genericStringArray = new GenericPrintArray(myStringArray) ;
+        genericStringArray.printArray();
+        
+        GenericPrintArray genericIntegerArray = new GenericPrintArray(myArray ) ;
+        genericIntegerArray.printArray();
     }
     
 }
